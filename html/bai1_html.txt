@@ -630,5 +630,29 @@ offset : khoảng cách của các col
 ----------------------------------------------------------------
 Git : Là phần mêm chia sẽ mã nguồn trên mạng xã hội
 
+Cấu trúc của git : 
+Repository : Kho chứa  -> 1 dự án : là 1 repo
 
+Git clone : sao chép 1 cái repo trên mạng về máy 
+    - Chỉ dùng 1 lần để làm dự án
+
+push code lên git : 
+    Git commit : Đẩy sự thay đổi lên mạng
+        - Làm xong 1 cái gì đó => commit
+        - push : đẩy sự thay đổi ở local repo lên remote repo 
+        - git push -u origin main
     
+
+pull code về :
+    - git pull : lấy sự thay đổi trên mạng về và áp dụng luôn
+
+    - git fetch : lấy sự thay đổi nhưng chưa áp dụng (xem có sự thay đổi trên mạng không)
+    
+Nhánh : branch
+    - tạo 1 nhánh mới :git checkout -b [branch_name]
+    
+- Đẻ nhánh từ 1 nhánh remote :
+    git checkout -b [branch_name] origin/main
+
+
+upstream : mối liên kết của 1 nhánh trên local và remote
