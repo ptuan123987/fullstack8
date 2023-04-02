@@ -656,3 +656,24 @@ Nhánh : branch
 
 
 upstream : mối liên kết của 1 nhánh trên local và remote
+            set upstream : Liên kết 1 nhánh local với 1 nhánh trên mạng
+push lên 1 nhánh mới trên mạng , nếu chưa có thì tạo
+    git init
+    git add .
+    git add remote add origin https://github.com/
+    git push -u origin [branch_name]
+    
+Cách clone từ git : git clone
+Cách pull về : git pull : pull về xong áp dụng luôn
+                git fetch : pull về nhưng chua áp dung ngay
+git branch : tạo 1 nhánh mới : checkout -b [branch_name]
+
+
+
+Git flow : Cách làm việc với git trong thực tế
+    - Nhánh dev/develop : luôn luôn upcode -> không được push lên đó
+    - Master/main/release : nhánh chính , dùng để release -> không được up code lên đó
+    - Nhánh features(tính năng) : đẻ từ nhánh của cả team
+        - Code xong gửi pull/merge request
+        - Leader review code
+        - Merge code  
