@@ -1,0 +1,634 @@
+Mo dau ve html :
+
+    - Title : Tieu de cua trang web
+    - Meta : Cac the thong tin phu
+    - Cac thuoc tinh :
+        - Ten thuoc tinh : dau "=" : ten thuoc tinh
+    
+    - 1 so the meta thuong dung : 
+        - Charset : (character  set)
+        - viewport
+        - Tuong thich IE(Internet explore)
+        - og : open graph
+        - robots : 
+    
+    - Body :
+        - heading :  h1 -> h6
+        -  ol , ul , li
+            - ul : unoder list
+            - ol : order list
+            - li : list
+    - 1 trang web dau tien co nguoi vao -> tang loi nhuan-> khong can qua dep
+      <a href="/a.html" target="_blank" rel="noopener">Di den a.html</a>
+      /: duong dan goc
+
+        - img : neu duoc nen dat thuoc tinh width, height 
+
+    - Div: 
+        - de boc cac the khac
+
+    - Header:
+        - Dau trang web 
+
+    - footer : 
+        - Duoi trang web
+
+    - sidebar :
+        -
+
+    - section : phan vung y nghia (2 phan khac nhau)
+        - header, footer duoc coi la 1 section => ro hon ve mat y nghia
+    
+    - inline-element
+    - block-element
+
+    - strong : nhan manh key word quan trong trong bai viet
+    - span : Chi dung de viet css - khong co tac dung ve mat y nghia
+
+    - blockquote : trich dan bai viet
+
+    - nav: navigation : thanh dieu huong
+
+    - form : khung gui du lieu
+    - chon nhieu cai -> vuong
+    - chon 1 cai -> tron
+
+
+    + Label : bo sung y nghia cho 1 input duy nhat 
+
+Bai tap :
+    - Viet 1 trang html (Co tat ca cac the da hoc)
+
+
+----------------------------------------------------------------
+25/2/2023
+
+Các thẻ trong hmtl chia làm 2 loại
+
+- Các thẻ nội dung (p ,img ,h ,input ,a , ) : để hiển thị các nội dung (chữ , hình ảnh , video)
+
+- Thẻ định dạng : Chứa các thẻ khác : div, header, footer, section, sidebar, form, article ,
+
+- Quy tắc :
+
+    - Thẻ nội dung không thể chứa các thẻ định dạng
+    - Thẻ định dang có thể chứa thẻ nội dung 
+
+Phân chia theo cách hiển thị
+
+- 2 loại:
+    - inline element :Các thẻ có dãn theo chiều rộng, xếp trên hàng
+        ex :  a, input, strong, label, span, img,
+    - block element :chiếm toàn bộ 
+        - h, p, form, div, section, footer, header ,
+- Quy tắc : 
+    - Thẻ block : chứa các thẻ inline
+    - 
+p chưa được thẻ a, span, 
+
+Developer tools :  công cụ dành cho nhà phát triển  
+
+
+-------------------------------------------------------------------
+
+CSS :
+    - html : là bộ khung của web
+    - css:  làm định đạng web
+
+    + Có 3 cách viết css :
+        - inline : viết thẳng trực tiếp vào html 
+
+        - Viết vào thẻ style : => không khuyến khích
+        - Thêm 1 thẻ link
+    - Nếu để link css trên đầu : tải css trước rồi tải html sau
+
+    - Để link css ở cuối : tải các element html trước rồi tải css sau 
+    - css selector :
+
+        + Chọn ra các thẻ css để áp dụng thuộc tính
+
+        + Các cách chọn như sau :
+            - Select by tagname : Viết tên thẻ vào 
+
+        + Chọn bằng id : 
+            - id : là các định danh => là duy nhât
+            - Dùng id :  dùng dấu # 
+        + Chọn băng class:
+            - Chọn bằng nhiều cái
+
+        + Chọn tất cả : *
+
+        + Chọn nhiều :  and, và 
+            - Dùng dấu phẩy
+
+        + Chọn thành phần con trực tiếp :
+            - dấu > : là con trực tiếp mới bị ảnh hưởng  
+
+        + Chọn theo thuộc tính
+
+        + first-child : chọn thành phần đầu tiên
+
+        + last-child : chọn thành phần cuối cùng
+
+        + nth-child(số thứ tự) :chọn theo thứ tự : 
+            ex : li:nth-child(3n)
+
+        + Chọn nhiều thành phần phía sau : dấu ~
+
+        + Chọn 1 thành phần phía ngay sau nó : dấu + 
+
+        + Chọn not : phủ định
+
+
+Box-model : cac the mo hinh
+
+    - Tat ca cac the deu co chung mo hinh hop
+    - padding : khoang cach giua duong vien den cai noi dung
+        - padding : 1px 2px 3px 4px :
+            - 1px : tren
+            - 2px  : phai
+            - 3px : duoi
+            - 4px : trai
+
+    - margin : khoang cach giua cac element voi nhau
+    - border : 1px solid red
+        1px: do day cua duong vien
+        solid : net lien
+
+    - box-sizing : quy dinh chieu rong hoac chieu cao duoc tinh ntn
+        - border-box : 
+
+    - min-width :
+    - max-width :
+    - img element : la display:inline-block
+
+
+Text : 
+    - line-height : chieu cao cua dong chu
+    - font-size : kich thuoc chu
+    
+    text-align : 
+    - letter-spacing :
+
+    fix : cac khoang trong giua cac li
+    ul {
+        font-size :0px;
+    }
+    set lai a element
+    a {
+        font-size :16px;
+    }
+
+Font :
+    font-family :
+    co 2 loai font-chu :
+        - Cuoi cung: sans-serif
+
+    2 loai font chu :  
+        - font co san tren mang
+        - font co san tren may
+
+    font-size : 
+    font-weight : 
+
+Font-face : su dung font ben ngoai
+ex :
+    
+/* @font-face {
+    font-family: bay;
+    src: url('/html/asset/src/fonts/font-thu-phap/Font/VNI-Baybuom.ttf');
+} */
+
+Font-weight :
+    - render theo font
+    - Tu tinh toan : Font khong dep
+
+icon-font :
+    - Font-awesome : 
+        Web link  : https://cdnjs.com/libraries/font-awesome
+    
+    - Su dung icon-font :
+        - Nhanh
+        - Dung luong nho
+        -  
+
+overflow : control lai text cho vua van ban
+-webkit-
+web co 1 chuan : w3c
+
+text-decoration :
+    -line-through :
+    - none : 
+text-indent : lui dau dong
+
+text-transform : bien doi text
+    - uppercase, lowercase, capitalize
+
+
+
+----------------------------------------------------------------
+Flex :
+
+display : cach hien thi cua mot element
+    - none :ẩn 
+
+    flex :hien thi dap ung
+
+    flex-grow : ti le chiem cac phan thua cua cha
+        - ti le mo rong ra khi thanh phan cha thua
+
+    flex-shrink : ti le chiem cac phan thieu cua thanh phan cha
+        - phan co lai khi no khong du width
+
+    
+    + justify-content : can chinh cac element theo truc main (0x)
+        - center :
+        - flex-start :  dau cua truc chinh (can sang ben trai)
+        - flex-end : duoi cua truc chinh (can sang ben phai)
+        - space-between : khoang trong o giua cac element
+        - space-around :
+        - space-evenly : khoang trong giua cac element bang nhau
+    
+    + align-item : can chinh cac thanh phan theo truc cross
+        - center
+        - flex-start
+        - flex-end
+        - space-between
+        - space-evenly
+        - stretch : rong bang truc cross
+
+flex-direction : doi huong 
+    + row : mac dinh
+
+flex-basis :
+
+flex-flow :
+
+flex-wrap : wrap
+
+flex-gap : khoang cach giua cac flex-item
+    gap : 5px 10px => 5px : khoang cac giua cac hang
+
+order : sap xep lai cac element 
+    order : 1 => vi tri 1
+    order : 2 => vi tri 2
+    
+
+Background:
+    - Nen : mau nen, anh nen
+    - Background nằm bên dưới border 
+    - repeat :  lặp lại Background
+    - background-clip : 
+        - border-box 
+        - content-box : 
+
+    - background-origin : vị trí của ảnh nền
+    - Muốn ra cả ảnh viền :
+        background-clip : border-box;
+        background-origin : border-box;
+
+
+    - short hand :
+
+        background : green url(kikit.png) no-repeat center center;
+    
+    background-position : vị trí của background
+        background-position : center center
+                            [trái phải] [trên dưới]
+
+    background-size : cover : phu sao cho full ca height width 
+
+    Nên đặt màu background-color : gan giong nhu background
+
+    background-attachment : khi cuon xuong thi no như thế nào
+        background-attachment : fix
+                fix => background cố định theo cuộn trang ()
+                local => 
+                inherit => kế thừa từ thằng cha 
+
+    Có thể đặt nhiều background-image
+
+
+Bài tập : Dựng khung của một trang web bất kì 
+
+1 số lưu ý về bài chữa : 
+    - Làm sao ít code html nhất (những cái đó có thể css)
+    - label thường đi theo input
+
+Component state  :
+    - không để cho copy :
+        user-select: none;
+    - trạng thái cả 1 element
+    - hover : di chuyển chuột vào sẽ làm gì
+    
+    input,button,image : 
+        - focus : tập trung vào 1 thứ gì đó 
+
+    link:a :
+        - link : link bình thường
+        - active : bấm vào , chưa đượcthả ra
+        - visited :  trang được xem rồi
+        - target : 
+            #abc:target {
+                background-color: red;
+            }
+        - link có dấu # thì chỉ xử lý trên client (phía trình duyệt)
+        -  focus within : 
+
+radio , checkbox :
+    - checked :
+    - checkebox :  true/false
+    - radio : chỉ được chọn 1
+    - khi checked vào
+
+
+    -> làm 1 cái tabs(dung radio)
+
+    -> mutil select : chọn 1 cái nó sẽ sáng lên(dùng checkbox)
+
+    -> slider: trượt các ảnh (dùng radio)
+
+
+    - làm giả checkbox : 
+    - đổi kiểu hiển thị: từ hàng ngang sang hàng dọc
+
+#products{
+    flex-direction:row;
+    display: flex
+}
+#products> div {
+    width:100%
+}
+#display-type:checked + #product {
+    flex-direction:column ;
+    flex-wrap : wrp
+}
+
+#display-type:checked +#product >div{
+    width : 33%
+}
+
+position :  
+    - static : la positon binh thuong
+    - relative(tuong doi): cach vi tri tuong doi cua element mac dinh  
+
+    - fixed : vi tri co dinh so voi body  
+
+    - sticky : khong thoat ra khoi trang hien thi
+        note : it trinh duyet ho tro, thuong dung bang js
+    - absolute : vi tri tuyet doi so voi thang cha
+    - relative absolute là cặp đôi huyền thoại\
+    - làm badges : 
+     - tooltip : 
+
+
+transform : 
+    - scale : zoom -> không ảnh hưởng đến khoảng không gian chiếm chỗ
+    - scaleX : chiều rộng
+    - scaleY : chiều cao
+    - rotate : xoay
+
+    - translate(x,y) :  - translateX : thay đổi hệ trục tọa độ 
+                        - translateY 
+    - khi để đơn vị % -> của element hiện tại
+    - khi làm menu nên đặt luôn border transparent
+
+
+    - Bài tập : slider, tooltip, menu đa cấp (không giới hạn số cấp)
+
+
+----------------------------------------------------------------
+Transition : chỉ sự thay đổi của các thuộc tính (color, width, height,padding, margin, border,... )
+    - ease : 
+    - linear :
+    - ease-in 
+    - ease-out 
+    - ease-in-out
+
+    trasition :width  1s ease-in-out
+
+Các thuộc tính khác : 
+    z-index : Xếp theo trục dọc
+    - Cao băng chiều cao trình duyệt :
+    html , body {
+        height : 100%;
+    }  
+    - Nên sử dụng max-width hơn là width 
+    - không bao giở đề hiện thanh cuộn ngang
+
+    - Căn giữa 1 cái element theo chiều ngang : 
+        margin-left và right : auto
+
+    - nên reset là css 
+    - style cho table của chúng ta : 
+
+    - table {
+        border-collapse: collapse;
+    }
+
+    border : không phải là đường thằng -> hình thang
+
+psesudo element :
+    :before : phía trước 
+    :after : phía sau
+
+    content: " " : nên để dấu cách ở bên trong
+
+    Bài tập : 
+        - code tooltip bốn bên, có mũi tên sổ xuống
+        - mobile menu
+        - switch 
+        - drop-down menu : bấm vào mới sổ xuống
+        - according menu :  
+----------------------------------------------------------------
+Các đơn vị đo trong css
+
+    - rem : root em (font size hiển thị theo root trongg html)
+    
+        html , body {
+            font-size : 62.5%;
+        }
+        div {
+            font-size : 1rem;
+            /1 rem  = 10px 
+        }
+    -> rem : hay dùng trong web reponsive
+
+    - pt : point 
+        - 72 point =  1 inch
+
+    -> pt : nó khá xịn -> nhưng ít dùng
+
+    - vw : viewport width : 1 % cua chiều rộng viewport
+    - vh :  1% của viewport height
+        Nên để : 
+        html {
+            height : 100vh;
+        }
+
+- bài tập : làm 1 cái modal : 
+    - ở giữa màn hình
+    - ấn ra ngoài modal cũng phải mất
+
+- Các loại hình ảnh :
+    - jpg : ảnh chụp , không hỗ trợ trong suốt 
+    - png : ảnh thiết kế phẳng 
+    - gif : bị răng , hỗ trợ nhiêu nhất là 256 màu
+    - webp :
+        - xịn nhất
+        - Không phải trình duyệt nào cũng hỗ trợ
+    - bmp : cổ -> không nên dùng
+    - svg : 
+        - ảnh vecto  
+        - không bị vỡ khi zoom ảnh
+        - có thể dùng js đê dùng làm animation
+
+- Quá trình trình duyệt load ảnh :
+    - Chuẩn bị 1 cái request
+    - header 
+    - cookie
+    - path
+    - Gửi request
+    - Tải về
+    - Vẽ ra trình duyệt
+    
+    Kỹ thuật : sprite image
+        - ảnh nhỏ, icon nhỏ
+        - Gom nhiều ảnh con => ảnh to -> dùng css để position 
+
+        - Giảm giật lag khi chúng ta hover, tải ảnh mới
+data uri :  
+
+Background gradient :
+    - background-image: linear-gradient(90deg, red 20%, white 30%, orange);
+    - linear gradient : (direction, color1, color2)
+    - sự thay đổi của background color 
+        white 30% : là từ 20%  đến 30% là sự chuyển tiếp từ màu đỏ sang màu xanh
+    - có thể dùng linear-gradient xếp chồng lên nhau
+
+    - repeat-gradient : 
+    - radial-gradient : 
+    - conin-gradient : 
+   
+- Web nghe nhạc :
+    - Play : âm lượng tăng dần trong 0.5s
+    - Ấn tắt : âm lượng giảm dần trong 0.5s
+
+- Project note :
+    - Đang viết thì mất điện, mất mạng
+        làm sao để chạy offline => https, worker
+    - deploy lên server :
+
+----------------------------------------------------------------
+- Shadow : 
+    - Box-shadow : 2px 3px 5px 6px red
+        2px : vị trí trái phải :
+        3px: vị trí lên xuống
+        5px : độ tỏa của bóng
+        6px : độ rộng của bóng
+    - text-shadow : 2px 3px 4px 5px red
+
+- Các thuộc tính ảnh hưởng đến khoảng không gian chiếm chỗ
+    - padding, margin, border-width,
+
+- Animation : Tự thay đổi luôn 
+- Transition : khi 1 thuộc tính của element có sự thay đổi 
+
+    @keyframes [name] {
+        from { 
+
+        } to { 
+
+        }
+    }
+    @keyframes [name] {
+        0% { 
+
+        } 
+        50% { 
+
+        }
+        100% { }
+    }
+
+Media query :
+    - Chọn ra các màn hình riêng biệt và style cho nó :
+    - reponsive : thiết kế web đáp ứng
+
+    - Breakpoint : điểm chuyển tiếp sang kiểu hiện thị khác
+    - Các loại Breakpoint : 
+        - > 576px : x-small
+        - > 768px : medium
+        - > 992px : large
+        - > 1200px : extra large
+        - > 1400px : Extra 
+
+    - Có 2 kiểu reponsive : 
+        - mobile first : nên dùng kiểu này (min-width : ) vì :
+            - điện thoại sẽ yếu hơn so với máy tính:
+            - Điện thoại cần tính toán ít -> ưu tiên điện thoại
+        - desktop first :
+
+
+
+
+
+-> Khi viết menu : html chỉ được viết 1 cái menu , mọi xử lý về vị trí menu , ẩn hiện là của css
+
+Bài tập(27/3/2022) : 
+    - tìm các cycle progress bar => style => càng nhiều càng tốt
+    - dựng layout, thêm animation cho nó
+
+    -> Trả lời câu hỏi kinh điển : mobile first là gì ? tại sao nên sử dụng mobile first ?
+    - Bài tập mobile-menu : reponsive cho nó (trên desktop thì là menu ngang , màn nhỏ là menu dọc)
+    - Dựng 1 gird hình ảnh (theo mobile first): 
+        - màn hình to : 4 cột => 3 cột => 2 cột => 1 chuột
+    - Bài viết liên quan :
+        - Màn hình lớn : hình ở trên => chữ ở dưới
+        - Màn hình nhỏ : hình bên trái , chữ bên phải 
+
+    ->  Hạn thứ 5 :
+
+
+Phần css : tìm hiểu thêm
+    - Biến : variable => 10 phút
+    - Gird : 
+        -  Flex : Hỗ trợ sâu hơn (nên dùng flex)
+
+    - opacity : 
+    - !important : độ quan trọng 
+    - masking : 
+
+    - aspect-ratio : tỉ lệ chiều rộng với chiều cao 
+
+
+css framework : 
+    - Viết code bằng css thuần : vất vả 
+    - Để lập trình nhanh hơn => designer => thiết kế theo framework
+    - Là các css được viết sẵn => được người ta chấp nhận
+
+Bootstrap : 
+    - Cài đặt bootstrap : 
+    - Dùng npm install
+    - Cách 2: Tải file css, js của bootstrap => đưa vào project
+    - Cách 3 : Dùng cdn của bootstrap
+
+Grid system : hệ thống lưới
+    - Container ->row ->col
+    - Container : 2 loại
+        - Container 
+        - Container-fuild
+    
+    - Reponsive :
+        - Cac loai man hinh :
+            - xxl,xl,lg,md,sm 
+        - Mobile first :
+
+offset : khoảng cách của các col
+
+
+----------------------------------------------------------------
+Git : Là phần mêm chia sẽ mã nguồn trên mạng xã hội
+
+
+    

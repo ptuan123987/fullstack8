@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    margin: 30px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header button {
+    margin: 0px 5px;
+}
+
+header#logo {
+    width: 190px;
+    height: 40px;
+}
+
+header button.register {
+    background-color: transparent;
+    color: #021A84;
+    font-weight: 500;
+    border-color: #021A84;
+    padding: 5px 25px;
+}
+
+header button.login {
+    background-color: #021A84;
+}
+
+section.content {
+    height: 500px;
+    /* background-color: rgb(242, 242, 242); */
+}
+
+section.search button.btn {
+    background-color: #021A84;
+}
+
+section.search-tags a {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 16px;
+    background-color: #ccc;
+    color: #292727;
+}
+
+section.content {}
+
+section.content .icon-heart {
+    border: 1px solid #ccc;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    color: #FE4C4C;
+}
+
+section.content .jobs p {
+    line-height: 45px;
+}
+
+.cards .card .icon {
+    width: 32px;
+    height: 32px;
+}
